@@ -20,7 +20,7 @@ As the structure is nearly identical, we provide a brief introduction for each c
 
 We compare our approach (SOFO) with its deterministic version (OFO) from [2].
 
-Our codes are largely consisted of three parts: 1) run_test 2) test_functions 3) solver
+Our codes are largely consisted of three parts: 1) run_test 2) test_functions 3) solver 4) Others
 1) run_test: 
 
 
@@ -43,7 +43,9 @@ FML_SMD_Solver: Code for SOFO-based Approach.
 
 FML_FMD_Solver: Code for OFO-based Approach.
 
+4) Others:
 
+This includes UBregret.py and utils.py which contains calculation functions for our solvers.
 
 
 
