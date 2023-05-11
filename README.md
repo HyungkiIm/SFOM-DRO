@@ -39,4 +39,5 @@ FML_FMD_Solver: Code for OFO-based Approach.
 
 [1] Set, A. D. (2017). UCI machine learning repository. Center for Machine Learning and Intelligent Systems.
  Retrieved from http://archive. ics. uci. edu/ml/datasets/Pima+ Indians+ Diabetes.
+ 
 [2] Ho-Nguyen, Nam, and Fatma Kılınç-Karzan. "Online first-order framework for robust convex optimization." Operations Research 66.6 (2018): 1670-1692.
