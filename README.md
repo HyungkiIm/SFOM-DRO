@@ -7,8 +7,10 @@ Python >= 3.7
 
 CVXPY >= 1.1.17
 
-Mosek >= 10.0.34\\
-NumPy\\
+Mosek >= 10.0.34
+
+NumPy
+
 Pandas 
 
 
