@@ -2,10 +2,13 @@
 The code for "Stochastic First-order Algorithms for Constrained Distributionally Robust Optimization" by Hyungki Im and Paul Grigas
 
 Dependencies:
+
 Python >= 3.7
+
 CVXPY >= 1.1.17
-Mosek >= 10.0.34
-NumPy
+
+Mosek >= 10.0.34\\
+NumPy\\
 Pandas 
 
 
@@ -13,7 +16,7 @@ In the Fairness ML experiment, we utilized the Adult income dataset from UCI [1]
 As the structure is nearly identical, we provide a brief introduction for each code within the Fairness ML folder.
 
 
-We compare our approach (SOFO) with its deterministic version (OFO) from [2]
+We compare our approach (SOFO) with its deterministic version (OFO) from [2].
 Our codes are largely consisted of three parts: 1) run_test 2) test_functions 3) solver
 1) run_test: 
 FML_run_n_num_test.py: This code outputs results that is needed to compare the solving time between SOFO and OFO for different n:
