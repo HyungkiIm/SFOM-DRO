@@ -19,17 +19,28 @@ As the structure is nearly identical, we provide a brief introduction for each c
 
 
 We compare our approach (SOFO) with its deterministic version (OFO) from [2].
+
 Our codes are largely consisted of three parts: 1) run_test 2) test_functions 3) solver
 1) run_test: 
+
+
 FML_run_n_num_test.py: This code outputs results that is needed to compare the solving time between SOFO and OFO for different n:
+
 FML_run_K_test_iter.py: This code outputs results that is needed to compare the convergence rate of SOFO for different K.
+
 FML_run_K_test_time.py: This code outputs results that is needed to compare the SP gap versus cpu time between SOFO and OFO.
 
+
 2) FML_test_functions.py:
+
+
 This code includes all the functions that is needed to implement run_test.
 
 3) Solver:
+
+
 FML_SMD_Solver: Code for SOFO-based Approach.
+
 FML_FMD_Solver: Code for OFO-based Approach.
 
 
