@@ -52,7 +52,7 @@ Moreover, please follow the following steps to build C code for RedBlackTree.
 python setup.py build_ext --inplace
 ```
 
-## Organization
+## Contents
 
 ### Data
 
@@ -79,12 +79,13 @@ The parameter set by test_functions.py follows the same parameter setting that w
 
 ![Figure 2-(a)](results/mult-test.png)
 
-For example, to replicate the experiment results used for Figure 2-(a) in the Fairness ML experiment, set the parameters as follows: 
+For example, to replicate the experiment results used for Figure 2-(a) in the Fairness ML experiment, set the parameters in the "FML_n_num_test.ipynb" as follows: 
 ```
 n_list_nt = np.linspace(10000,45000,15)
 repeats_num = 20
 ```
 
+Similar things apply to different experiments.
 ## Support
 
 For support in using this software, submit an
