@@ -52,6 +52,19 @@ Moreover, please follow the following steps to build C code for RedBlackTree.
 python setup.py build_ext --inplace
 ```
 
+## Organization
+
+### Data
+
+The "Data" folder includes the dataset that we used for the experiments. For the fairness machine learning example, we used a customized [adult income dataset](https://archive.ics.uci.edu/dataset/2/adult) from UCI. For the rest of the experiments, data are synthetically generated while running the experiments
+
+### Source
+
+The "src" folder includes the source code for each experiment. The subdirectory for each experiment includes stochastic online first-order (SOFO) approach solver ("SMD_Solver.py"), online first-order (OFO) approach solver ("FMD_Solver.py"), and some util functions ("UBRegret.py", "test_functions.py", "utils.py"). You can customize the parameter settings for each experiment by customizing the helper functions in the "test_functions.py".
+
+Moreover, the "src" folder includes the "RBTree" subdirectory, which implements the RBTree using C code. As written in the "Building" section, you must build the 
+"cython_RBTree.pyx" file first to use this. 
+
 ## Results
 
 ## Replicating
