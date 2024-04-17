@@ -77,7 +77,7 @@ You can run new experiments by running the corresponding Jupyter Notebook. We sp
 
 The parameter set by test_functions.py follows the same parameter setting that we have used in our experiment. Therefore, we only need to change the parameters in the Notebooks to replicate the results.
 
-![Figure 2-(a)](Figures/tree_FML_ntest_poly=3.pdf)
+![Figure 2-(a)](figures/FML_n_num_test.jpg)
 
 For example, to replicate the experiment results used for Figure 2-(a) in the Fairness ML experiment, set the parameters in the "FML_n_num_test.ipynb" as follows: 
 ```
