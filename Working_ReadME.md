@@ -36,40 +36,23 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
-
+The goal of this software is to demonstrate the effectiveness of the stochastic first-order method which is proposed in [Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() for constrained distributionally robust optimization.
 ## Building
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+Please see requirements.txt and install the required Python packages. You also need the license for the commercial solver [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/).
+You also need to follow the following steps to build C code for RedBlackTree. 
+
+1. Create a new virtual environment and download the required Python packages in requirements.txt
+
+2. Activate the newly created virtual environment and navigate to the 'src/RBTree' directory.
+
+3. Run the 'setup.py' script with Python. This will generate the C code from the cython_RBTree.pyx file. Use the following command:
 
 ```
-make mult
+python setup.py build_ext --inplace
 ```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
 
 ## Results
-
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/mult-test.png)
-
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
 
 ## Replicating
 
@@ -91,11 +74,6 @@ or
 ```
 python test.py sum
 ```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
 
 ## Support
 
