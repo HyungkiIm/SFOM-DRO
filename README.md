@@ -1,56 +1,81 @@
-# SFOM-DRO
-The code for "Stochastic First-order Algorithms for Constrained Distributionally Robust Optimization" by Hyungki Im and Paul Grigas
+[![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-Dependencies:
+# Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization
 
-Python >= 3.7
+This archive is distributed in association with the [INFORMS Journal on
+Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-CVXPY >= 1.1.17
+The software and data in this repository are a snapshot of the software and data
+that were used in the research reported on in the paper 
+[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() by Hyungki Im and Paul Grigas. 
 
-Mosek >= 10.0.34
+## Cite
 
-NumPy
+To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-Pandas 
-
-
-In the Fairness ML experiment, we utilized the Adult income dataset from UCI [1]. We conducted three experiments, and the code for each of these experiments follows a similar structure. 
-As the structure is nearly identical, we provide a brief introduction for each code within the Fairness ML folder.
+<span style="color: red;">fill here.</span>
 
 
-We compare our approach (SOFO) with its deterministic version (OFO) from [2].
-
-Our codes are largely consisted of three parts: 1) run_test 2) test_functions 3) solver 4) Others
-1) run_test: 
+<span style="color: red;">fill here.</span>
 
 
-FML_run_n_num_test.py: This code outputs results that is needed to compare the solving time between SOFO and OFO for different n:
+Below is the BibTex for citing this snapshot of the respoitory.
+<span style="color: red;">change this later.</span>
 
-FML_run_K_test_iter.py: This code outputs results that is needed to compare the convergence rate of SOFO for different K.
+```
+@misc{CacheTest,
+  author =        {T. Ralphs},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {{CacheTest}},
+  year =          {2020},
+  doi =           {10.1287/ijoc.2019.0000.cd},
+  url =           {https://github.com/INFORMSJoC/2019.0000},
+  note =          {Available for download at https://github.com/INFORMSJoC/2019.0000},
+}  
+```
 
-FML_run_K_test_time.py: This code outputs results that is needed to compare the SP gap versus cpu time between SOFO and OFO.
+## Description
 
+The goal of this software is to demonstrate the effectiveness of the stochastic first-order method which is proposed in [Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() for constrained distributionally robust optimization.
+## Building
 
-2) FML_test_functions.py:
+Please see requirements.txt and install the required Python packages. You also need the license for the commercial solver [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/).
+Moreover, please follow the following steps to build C code for RedBlackTree. 
 
+1. Create a new virtual environment and download the required Python packages in requirements.txt
 
-This code includes all the functions that is needed to implement run_test.
+2. Activate the newly created virtual environment and navigate to the 'src/RBTree' directory.
 
-3) Solver:
+3. Run the 'setup.py' script with Python. This will generate the C code from the cython_RBTree.pyx file. Use the following command:
 
+```
+python setup.py build_ext --inplace
+```
 
-FML_SMD_Solver: Code for SOFO-based Approach.
+## Results
 
-FML_FMD_Solver: Code for OFO-based Approach.
+## Replicating
 
-4) Others:
+To replicate the results in [Figure 1](results/mult-test), do either
 
-This includes UBregret.py and utils.py which contains calculation functions for our solvers.
+```
+make mult-test
+```
+or
+```
+python test.py mult
+```
+To replicate the results in [Figure 2](results/sum-test), do either
 
+```
+make sum-test
+```
+or
+```
+python test.py sum
+```
 
+## Support
 
-
-[1] Set, A. D. (2017). UCI machine learning repository. Center for Machine Learning and Intelligent Systems.
- Retrieved from http://archive. ics. uci. edu/ml/datasets/Pima+ Indians+ Diabetes.
- 
-[2] Ho-Nguyen, Nam, and Fatma Kılınç-Karzan. "Online first-order framework for robust convex optimization." Operations Research 66.6 (2018): 1670-1692.
+For support in using this software, submit an
+[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
