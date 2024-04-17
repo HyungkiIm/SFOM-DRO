@@ -40,7 +40,7 @@ The goal of this software is to demonstrate the effectiveness of the stochastic 
 ## Building
 
 Please see requirements.txt and install the required Python packages. You also need the license for the commercial solver [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/).
-You also need to follow the following steps to build C code for RedBlackTree. 
+Moreover, please follow the following steps to build C code for RedBlackTree. 
 
 1. Create a new virtual environment and download the required Python packages in requirements.txt
 
