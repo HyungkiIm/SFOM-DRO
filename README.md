@@ -75,26 +75,17 @@ You can run new experiments by running the corresponding Jupyter Notebook. We sp
 
 ## Replicating
 
-To replicate the results in [Figure 1](results/mult-test), do either
+The parameter set by test_functions.py follows the same parameter setting that we have used in our experiment. Therefore, we only need to change the parameters in the Notebooks to replicate the results.
 
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
+![Figure 2-(a)](results/mult-test.png)
 
+For example, to replicate the experiment results used for Figure 2-(a) in the Fairness ML experiment, set the parameters as follows: 
 ```
-make sum-test
-```
-or
-```
-python test.py sum
+n_list_nt = np.linspace(10000,45000,15)
+repeats_num = 20
 ```
 
 ## Support
 
 For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+[issue]().
