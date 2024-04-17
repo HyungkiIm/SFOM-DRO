@@ -65,7 +65,13 @@ The "src" folder includes the source code for each experiment. The subdirectory 
 Moreover, the "src" folder includes the "RBTree" subdirectory, which implements the RBTree using C code. As written in the "Building" section, you must build the 
 "cython_RBTree.pyx" file first to use this. 
 
+### Scripts
+
+The "scripts" folder includes the Jupyter notebooks to run each experiment. The experiment named "n_num_test" runs the SOFO approach and OFO approach for different values of the number of samples ($n$) to compare its solving time. The experiment named "K_time_test" runs the SOFO approach with different values of $K$ and compares its duality gap over time. More detailed explanations are available in each notebook.
+
 ## Results
+
+You can run new experiments by running the corresponding Jupyter Notebook. We specify the parameters that you might want to change for each experiment in the Jupyter Notebook. The newly created results will be saved under the "results" folder. Also, the results that we used in our paper are stored under the "submitted_results" folder.
 
 ## Replicating
 
