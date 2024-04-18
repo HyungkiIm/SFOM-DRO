@@ -7,7 +7,7 @@ Computing](https://pubsonline.informs.org/journal/ijoc).
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() by Hyungki Im and Paul Grigas. 
+[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization](https://arxiv.org/abs/2305.16584) by Hyungki Im and Paul Grigas. 
 
 ## Licensing
 
