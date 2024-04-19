@@ -1,13 +1,34 @@
-[![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
-
 # Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization
 
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc).
-
-The software and data in this repository are a snapshot of the software and data
+The software and data in this repository are a live version of the software and data
 that were used in the research reported on in the paper 
-[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization](https://arxiv.org/abs/2305.16584) by Hyungki Im and Paul Grigas. 
+[Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization](https://doi.org/10.1287/ijoc.2023.0167) by Hyungki Im and Paul Grigas. 
+
+The snapshot of the software and data used in the paper can be found in the [IJOC repository](https://github.com/INFORMSJoC/2023.0167).
+
+## Cite
+
+To cite the contents of the snapshot of the repository, please cite both the paper and the IJOC repo, using their respective DOIs.
+
+https://doi.org/10.1287/ijoc.2023.0167
+
+https://doi.org/10.1287/ijoc.2023.0167.cd
+
+
+Below is the BibTex for citing the snapshot version of the repository.
+
+```
+@misc{Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization,
+  author =        {Hyungki Im, Paul Grigas},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {{Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization}},
+  year =          {2023},
+  doi =           {https://doi.org/10.1287/ijoc.2023.0167.cd},
+  url =           {https://doi.org/10.1287/ijoc.2023.0167},
+  note =          {Available for download at https://github.com/INFORMSJoC/2023.0167},
+}  
+```
+
 
 ## Licensing
 
@@ -19,38 +40,13 @@ The source code included in this repository is distributed under the [MIT Licens
 
 The datasets provided in this repository are made available under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE_DATA). Further information is available on the [Creative Commons official page](https://creativecommons.org/licenses/by/4.0/).
 
-## Cite
-
-To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
-
-<span style="color: red;">fill here.</span>
-
-
-<span style="color: red;">fill here.</span>
-
-
-Below is the BibTex for citing this snapshot of the respoitory.
-<span style="color: red;">change this later.</span>
-
-```
-@misc{CacheTest,
-  author =        {T. Ralphs},
-  publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
-  note =          {Available for download at https://github.com/INFORMSJoC/2019.0000},
-}  
-```
-
 ## Description
 
 The goal of this software is to demonstrate the effectiveness of the stochastic first-order method which is proposed in [Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() for constrained distributionally robust optimization.
 
 ## Prerequisites
 
-Before you begin, ensure you have the necessary Python packages installed by referring to the `requirements.txt` file. Additionally, licenses for the commercial solvers [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/) are required.
+Before you begin, ensure you have the necessary Python packages installed by referring to the `requirements.txt` file. Additionally, licenses for the commercial solvers [Gurobi](https://www.gurobi.com/) and [Mosek](https://www.mosek.com/) are required. Moreover, please unzip the `adult.zip` file under the `data` folder to run the fairness ML example.
 
 
 ## Building
@@ -72,7 +68,7 @@ The `Data` folder contains the datasets used in our experiments. For the fairnes
 
 ### Source Code
 
-The `src` folder houses the source code for each experiment. Each subdirectory contains specific solvers including the stochastic online first-order (SOFO) approach (`SMD_Solver.py`), the online first-order (OFO) approach (`FMD_Solver.py`), and various utility functions (`UBRegret.py`, `test_functions.py`, `utils.py`). You can adjust the experiment parameters by modifying `test_functions.py`.
+The `src` folder houses the source code for each experiment. Each subdirectory contains specific solvers including the stochastic online first-order (SOFO) approach (`ExperimentName_SMD_Solver.py`), the online first-order (OFO) approach (`ExperimentName_FMD_Solver.py`), and various utility functions (`ExperimentName_UBRegret.py`, `ExperimentName_test_functions.py`, `ExperimentName_utils.py`). You can adjust the experiment parameters by modifying `ExperimentName_test_functions.py`.
 
 The `RBTree` subdirectory within `src` implements the RedBlackTree using C code, which must be built as described above.
 
@@ -86,7 +82,7 @@ To conduct new experiments, run the corresponding Jupyter Notebook and modify th
 
 ## Replication
 
-To replicate the results presented in our paper, adjust the parameters in the notebooks according to the settings specified in `test_functions.py`. For instance, to replicate the results for Figure 2-(a) in the Fairness ML experiment, modify the parameters in `FML_n_num_test.ipynb` as follows:
+To replicate the results presented in our paper, adjust the parameters in the notebooks according to the settings specified in `FML_test_functions.py`. For instance, to replicate the results for Figure 2-(a) in the Fairness ML experiment, modify the parameters in `FML_n_num_test.ipynb` as follows:
 
 ```
 poly_degree = 3
@@ -95,7 +91,7 @@ repeats_num = 20
 ```
 
 <div style="text-align: center;">
-    <img src="Figures/FML_n_num_test.jpg" alt="Figure 2-(a)" width="700" />
+    <img src="figures/FML_n_num_test.jpg" alt="Figure 2-(a)" width="700" />
     <p style="text-align: center;">Figure 2-(a): Comparison of solving time between OFO and SOFO</p>
 </div>
 
@@ -104,4 +100,4 @@ More details of parameters are presented in each Jupyter notebook. Adjusting the
 ## Support
 
 For support in using this software, submit an
-[issue](https://github.com/INFORMSJoC/2023.0167/issues).
+[issue](https://github.com/HyungkiIm/SFOM-DRO/issues).
