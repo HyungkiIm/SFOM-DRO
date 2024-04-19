@@ -40,6 +40,10 @@ The source code included in this repository is distributed under the [MIT Licens
 
 The datasets provided in this repository are made available under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE_DATA). Further information is available on the [Creative Commons official page](https://creativecommons.org/licenses/by/4.0/).
 
+## Updates Since Snapshot Version
+
+This section lists the updates made to the repository since the snapshot version was created.
+
 ## Description
 
 The goal of this software is to demonstrate the effectiveness of the stochastic first-order method which is proposed in [Stochastic First-Order Algorithms for Constrained Distributionally Robust Optimization]() for constrained distributionally robust optimization.
